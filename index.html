@@ -1,31 +1,42 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Edu Books Login</title>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Edu Books</title>
   <link rel="stylesheet" href="style.css">
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&display=swap" rel="stylesheet">
 </head>
 <body>
-  <div class="login-container">
-    <h2>Edu Books</h2>
-    <p class="subtitle">Login or Signup to continue</p>
 
-    <input type="email" id="email" placeholder="Email" required>
-    <input type="password" id="password" placeholder="Password" required>
+<div class="scene">
+  <div class="card" id="card">
 
-    <div class="btn-group">
-      <button id="loginBtn">Login</button>
-      <button id="signupBtn">Signup</button>
+    <!-- LOGIN SIDE -->
+    <div class="card-face card-front">
+      <h2>Login</h2>
+      <input type="email" placeholder="Email">
+      <input type="password" placeholder="Password">
+      <button>Login</button>
+      <p class="switch">No account? <span onclick="flipCard()">Signup</span></p>
     </div>
 
-    <p id="msg"></p>
-  </div>
+    <!-- SIGNUP SIDE -->
+    <div class="card-face card-back">
+      <h2>Signup</h2>
+      <input type="email" placeholder="Email">
+      <input type="password" placeholder="Password">
+      <button>Signup</button>
+      <p class="switch">Already user? <span onclick="flipCard()">Login</span></p>
+    </div>
 
-  <script type="module" src="script.js"></script>
+  </div>
+</div>
+
+<script src="script.js"></script>
 </body>
 </html>
+
+
 
 
 
