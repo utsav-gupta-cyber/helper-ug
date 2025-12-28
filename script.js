@@ -53,4 +53,7 @@ onAuthStateChanged(auth, (user) => {
     window.location.href = "dashboard.html";
   }
 });
+function flipCard() {
+  document.getElementById("card").classList.toggle("flip");
+}
 
